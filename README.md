@@ -1,54 +1,112 @@
-# DigitalTwinLike Crew
+# Tim's Digital Twin - CrewAI Agent
 
-Welcome to the DigitalTwinLike Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+## Overview
+This project creates a CrewAI agent that embodies my skills, personality, and research background as a computational biology graduate student at Harvard University.
 
-## Installation
+## About the Agent
+My digital twin represents me (Tim Cao) as a computational biology researcher specializing in:
+- Spatial transcriptomics and neural stem cell biology
+- Machine learning and deep learning applications in biology
+- Development of computational tools for scientific research
+- Multi-omics data analysis and visualization
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## Agent Capabilities
+The agent can:
+- Introduce me professionally to academic and professional audiences
+- Explain my research on pregnancy-driven neural stem cell niche remodeling
+- Describe my technical skills in Python, R, and spatial omics
+- Discuss my career goals in computational biology and neuroscience
 
-First, if you haven't already, install uv:
+## Technical Implementation
 
+### Agent Configuration
+- **Role**: Computational Biology Researcher and Data Science Graduate Student
+- **Goal**: Authentically represent Tim Cao's expertise and background
+- **Backstory**: Comprehensive background including education at University of Toronto and Harvard, research at Boston Children's Hospital, publications, and technical skills
+
+### Key Tasks
+1. **Introduction Task**: Professional self-introduction
+2. **Research Explanation**: Detailed explanation of spatial transcriptomics research
+3. **Skills Showcase**: Technical abilities and tools developed
+4. **Career Goals**: Future aspirations in computational biology
+
+## Setup and Installation
+
+### Prerequisites
+- Python 3.10+
+- OpenAI API key
+
+### Installation
 ```bash
-pip install uv
-```
+# Clone the repository
+git clone https://github.com/yourusername/digital_twin_like.git
+cd digital_twin_like
 
-Next, navigate to your project directory and install the dependencies:
+# Install CrewAI
+pip install crewai
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
+# Set up environment variables
+echo "OPENAI_API_KEY=your_key_here" > .env
+
+# Install dependencies
 crewai install
-```
-### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/digital_twin_like/config/agents.yaml` to define your agents
-- Modify `src/digital_twin_like/config/tasks.yaml` to define your tasks
-- Modify `src/digital_twin_like/crew.py` to add your own logic, tools and specific args
-- Modify `src/digital_twin_like/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+# Run the agent
+crewai run
 ```
 
-This command initializes the digital-twin-like Crew, assembling the agents and assigning them tasks as defined in your configuration.
+## Project Structure
+```
+digital_twin_like/
+├── src/
+│   └── digital_twin_like/
+│       ├── config/
+│       │   ├── agents.yaml      # Agent configuration
+│       │   └── tasks.yaml       # Task definitions
+│       ├── crew.py              # Crew orchestration
+│       └── main.py              # Execution entry point
+├── .env                         # Environment variables (not in repo)
+├── .gitignore                   # Git ignore rules
+└── README.md                    # This file
+```
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Assignment Requirements Met
 
-## Understanding Your Crew
+### ✅ What Worked
+- Successfully installed CrewAI and set up project structure
+- Configured agent with authentic personal background from CV
+- Defined multiple tasks that showcase different aspects of expertise
+- Agent successfully executes and provides detailed, authentic responses
+- Created reproducible setup with proper configuration management
 
-The digital-twin-like Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+### ✅ What Didn't Work (Initially)
+- Initial API quota limitations with OpenAI (resolved by setting up proper billing)
+- Naming mismatches between configuration files (fixed through careful alignment)
 
-## Support
+### ✅ What I Learned
+- How to structure CrewAI agents with personal knowledge and expertise
+- The importance of consistent naming across YAML configuration files
+- How to create authentic agent personas using real CV data
+- The power of CrewAI's configuration-driven approach for rapid prototyping
+- Best practices for managing API keys and environment variables
 
-For support, questions, or feedback regarding the DigitalTwinLike Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## Sample Output
+The agent produces professional, detailed responses that accurately reflect my background in computational biology, spatial transcriptomics research at Boston Children's Hospital, and technical expertise in Python, R, and machine learning.
 
-Let's create wonders together with the power and simplicity of crewAI.
+## Future Enhancements
+- Add web search capabilities for current research updates
+- Integrate with academic databases for publication queries
+- Add file processing tools for CV analysis
+- Implement memory for conversation context
+
+## Technologies Used
+- **CrewAI**: Multi-agent orchestration framework
+- **OpenAI GPT**: Language model for agent responses
+- **Python**: Primary programming language
+- **YAML**: Configuration management
+
+## Contact
+- **Name**: Wuxinhao (Tim) Cao
+- **Email**: tim_cao@hsph.harvard.edu
+- **Institution**: Harvard T.H. Chan School of Public Health
+- **Program**: MS in Computational Biology and Quantitative Genetics
