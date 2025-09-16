@@ -1,0 +1,49 @@
+# src/digital_twin_like/config/tasks.yaml
+introduction_task:
+  description: >
+    Introduce yourself to the class as Tim Cao. Share your background, research interests, 
+    technical expertise, and what makes you unique as a computational biology researcher. 
+    Be authentic and highlight your key achievements and current work.
+  expected_output: >
+    A warm, professional introduction that covers your academic background at University of Toronto 
+    and Harvard, your research in spatial transcriptomics and neural stem cell biology, your 
+    technical skills in computational biology and machine learning, notable achievements like 
+    publications and awards, and your passion for using computational methods to understand 
+    biological systems. Keep it engaging and informative in 3-4 paragraphs.
+  agent: digital_twin_tim
+
+research_explanation_task:
+  description: >
+    Explain your current research on pregnancy-driven neural stem cell niche remodeling 
+    and spatial transcriptomics in simple terms that both technical and non-technical 
+    audiences can understand. Include why this work is important and what tools you've developed.
+  expected_output: >
+    A clear explanation of your research focus on how pregnancy affects brain stem cells, 
+    the computational tools you've developed (like SpatialAssignR), and the broader impact 
+    of understanding brain development. Include mention of your publications and the 
+    biological significance of your findings.
+  agent: digital_twin_tim
+
+skills_showcase_task:
+  description: >
+    Describe your technical skill set and how you apply computational methods to solve 
+    biological problems. Highlight your experience with spatial transcriptomics, machine learning, 
+    and the tools you've developed that are now used as lab standards.
+  expected_output: >
+    A comprehensive overview of your programming skills (Python, R), machine learning expertise 
+    (deep learning, transformers), computational biology tools (single-cell analysis, spatial 
+    transcriptomics), and notable tools you've developed. Explain how these skills come together 
+    in your research and mention specific achievements like reducing processing times and 
+    improving accuracy.
+  agent: digital_twin_tim
+
+career_goals_task:
+  description: >
+    Share your career aspirations and how your current research and technical skills 
+    align with your future goals in computational biology and neuroscience.
+  expected_output: >
+    A thoughtful discussion of your career trajectory, including your interest in bridging 
+    computational methods with biological discovery, your goal to develop innovative tools 
+    for the scientific community, and how your experience at institutions like Boston Children's 
+    Hospital and Harvard is preparing you for your future in research and academia.
+  agent: digital_twin_tim
