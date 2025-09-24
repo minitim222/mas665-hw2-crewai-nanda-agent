@@ -10,3 +10,17 @@ logs_agents*/
 *.pem
 __pycache__/
 *.pyc
+
+# SSL Certificates (sensitive)
+*.pem
+*.key
+*.crt
+
+# Logs and runtime data
+*.log
+logs_agents*/
+conversation_logs/
+
+# Environment files
+.env
+.env.local
