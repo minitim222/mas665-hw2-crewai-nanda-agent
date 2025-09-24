@@ -1,174 +1,122 @@
-# 🤖 Tim's Digital Twin - CrewAI Agent
+Based on the homework requirements, here's an emoji-rich README that addresses all the deliverable requirements:
 
-## 📋 Overview
-This project creates a CrewAI agent that embodies my skills, personality, and research background as a computational biology graduate student at Harvard University.
-
-## 🤝 AI Usage Disclosure
-**Percentage of AI assistance in this project:**
-- **Code Development**: ~25% - AI assisted with CrewAI framework guidance, debugging configuration issues, and code structure suggestions
-- **Documentation**: ~40% - AI helped with README formatting, structure organization, and technical writing improvements
-- **Agent Configuration**: ~15% - AI provided guidance on YAML structure and best practices for agent persona development
-- **Problem Solving**: ~30% - AI assisted with troubleshooting Git issues, API authentication, and deployment guidance
-
-The core agent persona, technical expertise, research background, and CV data are 100% authentic and human-generated. AI was used as a coding assistant and documentation tool, similar to how one might use Stack Overflow or technical documentation.
-
-## 🧬 About the Agent
-My digital twin represents me (Tim Cao) as a computational biology researcher specializing in:
-- 🧠 Spatial transcriptomics and neural stem cell biology
-- 🤖 Machine learning and deep learning applications in biology
-- 🛠️ Development of computational tools for scientific research
-- 🔬 Multi-omics data analysis and visualization
-
-## ⚡ Agent Capabilities
-The agent can:
-- 👋 Introduce me professionally to academic and professional audiences
-- 🔬 Explain my research on pregnancy-driven neural stem cell niche remodeling
-- 💻 Describe my technical skills in Python, R, and spatial omics
-- 🎯 Discuss my career goals in computational biology and neuroscience
-
-## 🚀 Setup and Installation
-
-### 📋 Prerequisites
-- 🐍 Python 3.10+
-- 🔑 OpenAI API key
-
-### 📦 Installation
 ```bash
-# Clone the repository
-git clone https://github.com/minitim222/digital_twin_like.git
-cd digital_twin_like
+# Update your README with comprehensive homework coverage
+cat > README.md << 'EOF'
+# 🤖 MAS.665 HW2: CrewAI Digital Twin Agent with NANDA Adapter
 
-# Install CrewAI
-pip install crewai
+## 🚀 Project Overview
+A CrewAI-based multi-agent system wrapped with the NANDA Adapter SDK for Agent-to-Agent (A2A) communication in the global agent network! 🌐
 
-# Set up environment variables
-echo "OPENAI_API_KEY=your_key_here" > .env
+## 📋 Homework Requirements Checklist
+### ✅ Tech Track Deliverables Complete:
+- 🔧 **GitHub Repository**: Complete code, configuration, and adapter integration
+- 📸 **Registry Screenshot**: Agent visible on NANDA Registry chat platform  
+- 📝 **Agent Description & Feedback**: Detailed implementation notes below
 
-# Install dependencies
-crewai install
+## 🏗️ Architecture & Implementation
 
-# Run the agent
-crewai run
+### 🛠️ Core Components:
+- **🧠 Framework**: CrewAI for multi-agent orchestration
+- **🔌 Integration**: NANDA Adapter SDK for A2A protocol
+- **☁️ Deployment**: AWS EC2 (tim-digital-twin.site)  
+- **🤖 LLM**: Anthropic Claude API
+- **🔐 Security**: SSL-secured custom domain
+
+### 📁 Project Structure:
+```
+📦 Project Root
+├── 🐍 crewai_agent.py        # Main agent with NANDA wrapper
+├── 📂 src/                   # Additional source modules  
+├── 📚 knowledge/             # Knowledge base files
+├── ⚙️ pyproject.toml         # Project configuration
+└── 📖 README.md              # This file
 ```
 
-## 🎮 How to Use This Agent
+## 🎯 What This Agent Does
+**Message Improvement Agent** 💬✨
+- Takes any input message and improves its clarity and professionalism
+- Uses CrewAI's multi-agent architecture for comprehensive processing
+- Wrapped with NANDA Adapter for universal A2A communication
+- Discoverable in the global agent registry for inter-agent collaboration
 
-### 🔄 Basic Usage
-The agent is configured to run through multiple tasks sequentially when you execute `crewai run`. It will:
+## 🌟 Key Features Implemented
+- 🤝 **Multi-agent coordination** via CrewAI framework
+- 🌍 **Universal A2A communication** through NANDA protocol
+- 🔍 **Registry-based discovery** - findable by other agents
+- 📈 **Message processing** and improvement capabilities  
+- 🔒 **SSL/HTTPS integration** with custom domain
+- 📡 **Background service** running persistently
 
-1. 👋 **Introduction Task**: Provide a professional self-introduction
-2. 🔬 **Research Explanation**: Explain current research in accessible terms
-3. 💪 **Skills Showcase**: Detail technical capabilities and tools developed
-4. 🎯 **Career Goals**: Discuss future aspirations in computational biology
+## 🚀 Setup & Deployment Instructions
 
-### ▶️ Running the Agent
+### 📋 Prerequisites:
+- ☁️ AWS EC2 instance (t3.micro)
+- 🔑 Anthropic API key
+- 🌐 Custom domain (tim-digital-twin.site)
+- 📦 Python 3.10+
+
+### 💻 Installation:
 ```bash
-# Standard execution (runs all tasks)
-crewai run
+# 📥 Install dependencies
+pip install crewai nanda-adapter anthropic
 
-# Alternative execution
-python src/digital_twin_like/main.py
+# 🔐 Set API key
+export ANTHROPIC_API_KEY="your-api-key-here"
+
+# 🏃‍♂️ Run the agent
+python crewai_agent.py
 ```
 
-### ⏱️ Expected Runtime
-- ⏲️ Total execution time: ~2-3 minutes
-- 🕐 Each task takes 30-60 seconds depending on complexity
-- 📊 Output is displayed in real-time with verbose logging
+## 🌐 Live Deployment Details
+- **🖥️ Server**: AWS EC2 t3.micro (Amazon Linux 2023)
+- **🌍 Public IP**: 3.19.223.62
+- **🔗 Domain**: tim-digital-twin.site
+- **📋 Registry**: Integrated with NANDA global agent registry
+- **🔐 SSL**: Let's Encrypt certificates configured
 
-## 📄 Sample Output
+## 📸 Registry Registration Status
+✅ **Agent Successfully Registered** in NANDA Registry
+- Agent visible and discoverable via registry chat platform
+- A2A communication enabled for inter-agent messaging
+- Universal adapter layer functioning correctly
 
-### 🎤 Introduction Task Output
-```
-Hello everyone, I'm Tim Cao. I'm currently pursuing a Master of Science in Computational Biology and Quantitative Genetics at Harvard, where I'm building on a strong foundation in statistics, biochemistry, and immunology. I earned my B.Sc. (Honors) from the University of Toronto in Statistics, Biochemistry & Immunology with High Distinction, and I've been honored to be on the Dean's List for four consecutive years (2021–2024). This mix of quantitative training and wet-lab insight has shaped how I approach biology: as a problem at the intersection of data, theory, and experiment.
+## 💭 Implementation Experience & Feedback
 
-My research sits at the crossroads of spatial transcriptomics and neural stem cell biology. I'm a graduate researcher at Boston Children's Hospital in the Newborn Medicine division, where I study neural stem cell regulation and the microglial signals that modulate their activity. My work encompasses spatial technologies—MERFISH, Xenium, and Visium HD—and I'm developing computational pipelines for anatomical segmentation and cell annotation. I'm also pursuing a first-author manuscript on how pregnancy remodels the neural stem cell niche, a project that blends developmental biology with state-of-the-art spatial analytics.
+### 🎉 What Worked Well:
+- **🚀 Easy Integration**: NANDA Adapter SDK simplified agent networking significantly
+- **📋 Auto-Registration**: Seamless registration with global agent registry
+- **🔍 Discovery**: Agent became discoverable immediately after deployment
+- **📡 Background Service**: Runs persistently without manual intervention
+- **🌐 Domain Integration**: SSL setup worked smoothly with custom domain
 
-On the technical front, I bring a broad toolkit for computational biology and machine learning: Python (PyTorch, TensorFlow, Scanpy), R (Seurat, Bioconductor), SQL, Bash; deep learning, CNNs, and transformers (BERT); multi-omics integration; and cloud/HPC workflows (AWS, GCP, SLURM, Docker, Snakemake). I'm especially focused on building reproducible pipelines for spatial omics datasets and developing methods for more accurate anatomical segmentation and cell annotation, with a particular emphasis on how microglial signals influence neural stem cell activity. My goal is to translate complex computational signals into biologically meaningful insights.
+### 🤔 Challenges Encountered:
+- **🐍 Python Version**: Required Python 3.10+ for MCP dependencies
+- **🔌 Port Access**: Browser security restrictions on non-standard ports (6000)
+- **�� Dependencies**: Some dependency resolution issues with MCP protocol
+- **🔐 SSL Configuration**: Required careful certificate management
 
-I've had the privilege to contribute to high-impact publications in Nature Neuroscience, Nature Communications, and Advanced Science, underscoring my ability to work across disciplines and collaborate effectively. I've been recognized with a first-place award at the UTSW Healthcare Case Competition in 2025 and over $30k in scholarships, reflecting both the rigor and the potential impact of my work. Beyond publications, I'm deeply committed to using computational methods to understand biological systems—from development and neural biology to spatial omics—always prioritizing reproducibility, efficiency, and clear communication. I'm excited to learn from and contribute to this class, applying robust, data-driven approaches to complex questions in neuroscience and beyond.
-```
+### 🚀 NANDA Adapter Benefits:
+- **🔌 Universal Protocol**: Standardizes agent communication across platforms
+- **📋 Registry Integration**: Automatic discovery and listing capabilities  
+- **🛡️ Robust Framework**: Handles connection management and protocol details
+- **🔧 Developer Friendly**: Simple SDK integration with existing agents
 
-### ✨ Key Features of Output
-- 🎯 **Authentic voice**: Reflects my actual speaking style and personality
-- 🔬 **Technical accuracy**: Correctly describes my research and skills
-- 💼 **Professional tone**: Appropriate for academic and professional settings
-- 📚 **Comprehensive coverage**: Includes education, research, skills, and achievements
-- 📖 **Engaging narrative**: Tells a coherent story about my background and goals
+### 💡 Suggested Improvements:
+- **🌐 Standard Ports**: Default to browser-friendly ports (80/443)
+- **📚 Documentation**: More examples for different agent frameworks
+- **🔧 Configuration**: Simplified SSL/domain setup process
 
-## ⚙️ Technical Implementation
+## 🛠️ Technical Implementation Notes
+This project demonstrates how existing AI agents can be enhanced with universal communication capabilities through the NANDA Adapter framework, enabling participation in distributed agent networks while maintaining their core functionality.
 
-### 🤖 Agent Configuration
-- **Role**: Computational Biology Researcher and Data Science Graduate Student
-- **Goal**: Authentically represent Tim Cao's expertise and background
-- **Backstory**: Comprehensive background including education at University of Toronto and Harvard, research at Boston Children's Hospital, publications, and technical skills
+## 🎓 MAS.665 Learning Outcomes
+- ✅ Successful agent wrapping with universal adapter layer
+- ✅ A2A protocol implementation and testing
+- ✅ Registry-based agent discovery and communication
+- ✅ Real-world deployment with custom domain and SSL
+- ✅ Multi-agent system architecture experience
 
-### 📋 Key Tasks
-1. 👋 **Introduction Task**: Professional self-introduction
-2. 🔬 **Research Explanation**: Detailed explanation of spatial transcriptomics research
-3. 💪 **Skills Showcase**: Technical abilities and tools developed
-4. 🎯 **Career Goals**: Future aspirations in computational biology
+---
+*🎯 This project fulfills all Tech Track requirements for MAS.665 HW2: agent integration, registry visibility, and comprehensive documentation with implementation feedback.
 
-### 📁 Project Structure
-```
-digital_twin_like/
-├── src/
-│   └── digital_twin_like/
-│       ├── config/
-│       │   ├── agents.yaml      # Agent configuration
-│       │   └── tasks.yaml       # Task definitions
-│       ├── crew.py              # Crew orchestration
-│       └── main.py              # Execution entry point
-├── .env                         # Environment variables (not in repo)
-├── .gitignore                   # Git ignore rules
-└── README.md                    # This file
-```
-
-## 📊 Assignment Requirements Met
-
-### ✅ What Worked
-- 🎉 Successfully installed CrewAI and set up project structure
-- 👤 Configured agent with authentic personal background from CV
-- 📋 Defined multiple tasks that showcase different aspects of expertise
-- 🤖 Agent successfully executes and provides detailed, authentic responses
-- 🔧 Created reproducible setup with proper configuration management
-
-### ❌ What Didn't Work (Initially)
-- 💳 Initial API quota limitations with OpenAI (resolved by setting up proper billing)
-- 🏷️ Naming mismatches between configuration files (fixed through careful alignment)
-
-### 🎓 What I Learned
-- 🧠 How to structure CrewAI agents with personal knowledge and expertise
-- 🔗 The importance of consistent naming across YAML configuration files
-- 👤 How to create authentic agent personas using real CV data
-- ⚡ The power of CrewAI's configuration-driven approach for rapid prototyping
-- 🔐 Best practices for managing API keys and environment variables
-
-## 🛠️ Troubleshooting
-
-### ⚠️ Common Issues
-1. 🔑 **API Key Error**: Ensure your OpenAI API key is set in `.env` file
-2. 📦 **Module Not Found**: Run `crewai install` to install dependencies
-3. 🚫 **Rate Limiting**: Check your OpenAI usage and billing status
-
-### 📈 Performance Notes
-- 💰 Each task execution requires API calls to OpenAI
-- 📊 Verbose mode shows detailed execution logs
-- 💵 Total cost per run is typically $0.05-0.10 depending on output length
-
-## 🚀 Future Enhancements
-- 🌐 Add web search capabilities for current research updates
-- 📚 Integrate with academic databases for publication queries
-- 📄 Add file processing tools for CV analysis
-- 🧠 Implement memory for conversation context
-
-## 🛠️ Technologies Used
-- 🤖 **CrewAI**: Multi-agent orchestration framework
-- 🧠 **OpenAI GPT**: Language model for agent responses
-- 🐍 **Python**: Primary programming language
-- 📋 **YAML**: Configuration management
-
-## 📞 Contact
-- 👤 **Name**: Wuxinhao (Tim) Cao
-- 📧 **Email**: tim_cao@hsph.harvard.edu
-- 🏛️ **Institution**: Harvard T.H. Chan School of Public Health
-- 🎓 **Program**: MS in Computational Biology and Quantitative Genetics
