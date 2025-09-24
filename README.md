@@ -1,8 +1,4 @@
-Based on the homework requirements, here's an emoji-rich README that addresses all the deliverable requirements:
 
-```bash
-# Update your README with comprehensive homework coverage
-cat > README.md << 'EOF'
 # 🤖 MAS.665 HW2: CrewAI Digital Twin Agent with NANDA Adapter
 
 ## 🚀 Project Overview
